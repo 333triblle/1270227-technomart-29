@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Максим Митькин](https://up.htmlacademy.ru/htmlcss/29/user/1270227).
-* Наставник: [Валерий Хаслер].(https://htmlacademy.ru/profile/id224163).
+* Наставник: [Валерий Хаслер :-)].(https://htmlacademy.ru/profile/id224163).
 
 ---
 
