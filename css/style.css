@@ -104,6 +104,13 @@ img {
   background-color: var(--white);
 }
 
+.login-link:hover {
+  color: var(--basic-red);
+}
+
+.login-link:active {
+  color: var(--basic-lightgrey);
+}
 
 /* Header-navigation */
 
