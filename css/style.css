@@ -8,9 +8,20 @@
 --basic-background: #f1f5f7;
 --basic-darkblue: #32425c;
 --basic-grayblue: #293449;
+
 --snow-background: #f9f5f0;
 --price-gray: #a9a9a9;
 --menu-yellow: #ffda96;
+--hover-menu: #1d2739;
+--hover-button: #ca2737;
+
+--active-link: rgba(255, 255, 255, 0.5);
+--categories-iteam: rgba(255, 255, 255, 0.3);
+--categories-iteam-hover: rgba(197, 197, 197, 0.3);
+--categories-iteam-active: rgba(169, 169, 169, 0.3);
+--categories-link-active: rgba(255, 209, 128, 0.5);
+--navigations-link-active: rgba(241, 245, 247, 0.5);
+
 
 --white: #ffffff;
 --black: #000000;
@@ -21,8 +32,6 @@
 --special-greenlight: #8ed78f;
 --special-yellowlight: #ffc047;
 --special-lightgray: #eaeaea;
-
-
 
 --success: #5fbb2d;
 --error: #ba2732;
@@ -59,6 +68,14 @@ img {
 
 .main-header {
   background: rgba(0, 0, 0, 0.0001);
+}
+
+.main-header-logo {
+  background-color: var(--basic-red);
+}
+
+.main-header-logo:active {
+  background-color: var(--error);
 }
 
 .header-description {
@@ -106,10 +123,20 @@ img {
   color: var(--white);
 }
 
+.header-navigation-link:active,
+.arrange-order:active {
+  color: var(--active-link);
+}
+
 .arrange-order {
   color: var(--white);
   background-color: var(--basic-green);
 }
+
+.arrange-order:hover {
+  background-color: var(--success);
+}
+
 
 
 /* Site-navigation*/
@@ -118,12 +145,22 @@ img {
   background-color: var(--basic-grey);
 }
 
+.site-navigation-iteam:hover {
+  background-color: var(--hover-menu);
+}
+
+.site-navigation-link:active {
+  color: var(--active-link)
+}
+
 .site-navigation-list {
   list-style: none;
 }
 
 .site-navigation-link {
   color: var(--white);
+  font-size: 18px;
+  line-height: 24px;
 }
 
 
@@ -141,6 +178,18 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.categories-iteam-paragraph {
+  background-color: var(--categories-iteam);
+}
+
+.categories-iteam-paragraph:hover{
+  background-color: var(--categories-iteam-hover);
+}
+
+.categories-iteam-paragraph:active {
+  background-color: var(--categories-iteam-active);
 }
 
 .categories-link {
@@ -202,6 +251,13 @@ font-size: 18px;
   text-transform: uppercase;
 }
 
+.menu-button:hover {
+  background-color: var(--hover-button);
+}
+
+.menu-button:active {
+  background-color: var(--error);
+}
 
 /* Popular-goods */
 
@@ -270,13 +326,22 @@ font-size: 18px;
   color: var(--white);
 }
 
-.service-list-link:hover {
+.service-list-link:active {
   color: var(--basic-grey);
+}
+
+.service-list-iteam:hover {
+  background-color: var(--basic-grayblue);
+}
+
+.service-list-iteam:active {
   background-color: var(--white);
 }
 
 .basic-paragraph {
   font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /* Delivery-list*/
@@ -309,12 +374,25 @@ font-size: 18px;
   line-height: 24px;
 }
 
+.footer-navigation-link:hover,
+.footer-categories-link:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-link:active{
+  color: var(--navigations-link-active);
+  text-decoration: none;
+}
 
 .footer-categories-link {
   color: var(--menu-yellow);
   font-size: 18px;
   line-height: 24px;
+}
 
+.footer-categories-link:active {
+  color: var(--categories-link-active);
+  text-decoration: none;
 }
 
 .footer-copyright {
@@ -330,4 +408,15 @@ font-size: 18px;
 .academy-site,
 .academy-mail {
   color: var(--menu-yellow);
+}
+
+.academy-mail:hover,
+.academy-site:hover {
+  text-decoration: underline;
+}
+
+.academy-mail:active,
+.academy-site:active {
+  text-decoration: none;
+  color: var(--basic-red);
 }
