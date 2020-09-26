@@ -82,6 +82,8 @@ img {
 }
 
 .header-description {
+  font-size: 16px;
+  line-height: 23px;
   font-style: italic;
   color: var(--basic-red);
 }
@@ -94,7 +96,7 @@ img {
   border: 2px solid var(--white);
 }
 
-.header-adress {
+.header-address {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-grey);
@@ -476,7 +478,7 @@ font-size: 18px;
 
 /* Catalog-page*/
 
-.cathalog-menu-link {
+.catalog-menu-link {
   color: var(--black);
   font-size: 13px;
   line-height: 18px;
@@ -487,11 +489,11 @@ font-size: 18px;
   background-color: var(--basic-background);
 }
 
-.cathalog-pages {
+.catalog-pages {
   list-style: none;
 }
 
-.cathalog-page-link {
+.catalog-page-link {
   color: var(--black);
   font-size: 13px;
   line-height: 18px;
