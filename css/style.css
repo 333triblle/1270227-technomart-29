@@ -251,8 +251,9 @@ background-color: var(--special-yellowlight);
 }
 
 .slider-paragraph {
-color: var(--white);
-font-size: 18px;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .menu-button {
@@ -357,6 +358,12 @@ font-size: 18px;
 
 .popular-manufacturers-list {
   list-style: none;
+}
+
+.manufacturers-container {
+  width: 220px;
+  height: 145px;
+  align-items: center;
 }
 
 /* Service-box*/
