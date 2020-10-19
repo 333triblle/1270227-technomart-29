@@ -17,9 +17,9 @@
   --border-superlightgrey : #e5e5e5;
 
   --active-link: rgba(255, 255, 255, 0.5);
-  --categories-iteam: rgba(255, 255, 255, 0.3);
-  --categories-iteam-hover: rgba(197, 197, 197, 0.3);
-  --categories-iteam-active: rgba(169, 169, 169, 0.3);
+  --categories-item: rgba(255, 255, 255, 0.3);
+  --categories-item-hover: rgba(197, 197, 197, 0.3);
+  --categories-item-active: rgba(169, 169, 169, 0.3);
   --categories-link-active: rgba(255, 209, 128, 0.5);
   --navigations-link-active: rgba(241, 245, 247, 0.5);
 
@@ -42,7 +42,6 @@
 
   body{
     text-align: center;
-    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: 'Cuprum', Arial, sans-serif;
@@ -90,12 +89,17 @@
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.0001);
     margin-bottom: 70px;
-    /* outline: 5px solid rgba(0, 255, 0, 0.3);
-    outline-offset: -5px; */
     background-color: var(--basic-background);
   }
 
   .main-header-logo {
+    display: inline-block;
+    width: 220px;
+    height: 42px;
+    box-shadow: 0 5px 0 0 var(--error);
+    background-image: url(../img/logo-technomart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--basic-red);
   }
 
@@ -104,10 +108,13 @@
   }
 
   .header-description {
+    text-align: left;
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     color: var(--basic-red);
+    margin: 0;
+    padding-left: 30px;
   }
 
   .header-phone {
@@ -124,14 +131,18 @@
     color: var(--basic-grey);
   }
 
+  .registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+  }
+
   .login-link {
     font-size: 21px;
     line-height: 21px;
     color: var(--black);
     background-color: var(--white);
-
-    /* outline: 5px solid rgba(255, 0, 255, 0.3);
-    outline-offset: -5px; */
   }
 
 
@@ -149,20 +160,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     height: 42px;
     color: var(--white);
     background-color: var(--basic-grey);
     font-size: 18px;
     line-height: 24px;
-
-    /* outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px; */
   }
 
   .header-navigation-list {
+    width: 430px;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
-
     list-style: none;
     background-color: var(--basic-grey);
   }
@@ -183,7 +192,9 @@
 
   .header-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 46px;
   }
 
   .header-contacts {
@@ -193,6 +204,11 @@
   }
 
   .arrange-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 42px;
     color: var(--white);
     background-color: var(--basic-green);
   }
@@ -209,10 +225,13 @@
     width: 940px;
     height: 60px;
     margin: 0 auto;
-    background-color: var(--basic-grey);
+    margin-top: 44px;
+    padding: 0;
+    padding-bottom: 65px;
+    background-color: var(--basic-background);
   }
 
-  .site-navigation-iteam:hover {
+  .site-navigation-item:hover {
     background-color: var(--hover-menu);
   }
 
@@ -223,15 +242,19 @@
   .site-navigation-list {
     display: flex;
     justify-content: space-around;
-
     list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+    height: 60px;
+    background-color: var(--basic-grey);
   }
 
-  .site-navigation-iteam {
+  .site-navigation-item {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 0 31px;
     height: 60px;
   }
 
@@ -250,14 +273,11 @@
 
   /* Categories */
 
-  /* .categories-slider {
-
-  } */
-
-  .categories {
-    width: 940px;
+  .categories-slider {
+     width: 940px;
     margin: 0 auto;
     padding: 0;
+    display: contents;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -269,9 +289,14 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+
   }
 
-  .categories-iteam {
+  .categories {
+    display: contents;
+  }
+
+  .categories-item {
     width: 300px;
     height: 123px;
     color: var(--white);
@@ -280,16 +305,16 @@
     line-height: 30px;
   }
 
-  .categories-iteam-paragraph {
-    background-color: var(--categories-iteam);
+  .categories-item-paragraph {
+    background-color: var(--categories-item);
   }
 
-  .categories-iteam-paragraph:hover{
-    background-color: var(--categories-iteam-hover);
+  .categories-item-paragraph:hover{
+    background-color: var(--categories-item-hover);
   }
 
-  .categories-iteam-paragraph:active {
-    background-color: var(--categories-iteam-active);
+  .categories-item-paragraph:active {
+    background-color: var(--categories-item-active);
   }
 
   .categories-link {
@@ -368,7 +393,11 @@
   }
 
   .menu-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 38px;
     margin-top: 25px;
     margin-right: 14px;
     height: 38px;
@@ -492,8 +521,10 @@
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
-    background-color: var(--basic-red);
+
+    background-image: url(../img/catalog/price-button.png);
   }
+
 
   /* Popular-manufacturers*/
 
@@ -552,7 +583,7 @@
     list-style: none;
   }
 
-  .service-list-iteam {
+  .service-list-item {
     width: 240px;
     height: 61px;
     background-color: var(--basic-grey);
@@ -570,11 +601,11 @@
     color: var(--basic-grey);
   }
 
-  .service-list-iteam:hover {
+  .service-list-item:hover {
     background-color: var(--basic-grayblue);
   }
 
-  .service-list-iteam:active {
+  .service-list-item:active {
     background-color: var(--white);
   }
 
@@ -588,7 +619,7 @@
     line-height: 30px;
   }
 
-  .features-iteam {
+  .features-item {
     padding: 0;
     text-align: left;
     margin: 0 auto;
@@ -617,7 +648,7 @@
     padding-left: 17px;
   }
 
-  .delivery-iteam {
+  .delivery-item {
     font-size: 18px;
     line-height: 24px;
   }
@@ -642,6 +673,13 @@
 
 
   .main-footer-logo {
+    display: inline-block;
+    width: 220px;
+    height: 58px;
+    box-shadow: 0 4px 0 0 var(--error);
+    background-image: url(../img/logo-technomart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--basic-red);
   }
 
@@ -668,14 +706,16 @@
   }
 
   .footer-navigation {
+    width: 546px;
     display: flex;
     justify-content: space-between;
     margin-top: 37px;
   }
 
   .footer-categories {
+    width: 523px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .footer-phone,
