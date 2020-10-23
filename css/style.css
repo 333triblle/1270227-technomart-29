@@ -139,6 +139,10 @@
   }
 
   .login-link {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
     font-size: 21px;
     line-height: 21px;
     color: var(--black);
@@ -248,6 +252,7 @@
     width: 940px;
     height: 60px;
     background-color: var(--basic-grey);
+    box-shadow: 0 5px 0 0 var(--basic-darkblue);
   }
 
   .site-navigation-item {
@@ -372,10 +377,12 @@
   }
 
   .main-slider-text {
-
     background-color: var(--price-gray);
     background: rgba(0, 0, 0, 0.25);
+  }
 
+  .display-none {
+    display: none;
   }
 
   .slider-heading {
@@ -454,6 +461,11 @@
   }
 
   .popular-goods-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
     width: 220px;
     height: 318px;
     border: 1px solid var(--special-lightgray);
@@ -516,12 +528,16 @@
   }
 
   .menu-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 38px;
     color: var(--white);
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
-
     background-image: url(../img/catalog/price-button.png);
   }
 
@@ -564,6 +580,11 @@
     line-height: 30px;
   }
 
+  .map-button {
+    min-width: 300px;
+    margin-right: 0;
+  }
+
   .service-paragraph {
     text-align: left;
   }
@@ -590,6 +611,9 @@
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
+
+    display: flex;
+    align-items: center;
   }
 
   .service-list-link {
@@ -612,6 +636,7 @@
   .special-heading {
     font-weight: 400;
     color: var(--basic-grey);
+    margin-top: 0;
     margin-bottom: 30px;
     text-align: left;
     text-transform: uppercase;
@@ -623,6 +648,7 @@
     padding: 0;
     text-align: left;
     margin: 0 auto;
+    margin-bottom: 57px;
     margin-left: 80px;
   }
 
@@ -665,12 +691,15 @@
   } */
 
   .page-footer {
-    width: 940px;
     margin: 0 auto;
     margin-top: 70px;
     color: var(--white);
   }
 
+.basic-darkblue {
+  background-color: var(--basic-darkblue);
+  width: 100%;
+}
 
   .main-footer-logo {
     display: inline-block;
@@ -689,7 +718,9 @@
 
 
   .footer-menu {
-
+    width: 940px;
+    min-height: 193px;
+    margin: 0 auto;
     background-color: var(--basic-darkblue);
     font-size: 18px;
     line-height: 24px;
@@ -710,6 +741,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 37px;
+    margin-bottom: 0;
   }
 
   .footer-categories {
@@ -717,6 +749,24 @@
     display: flex;
     justify-content: space-between;
   }
+
+.categories-string {
+  text-align: left;
+}
+
+.categories-string {
+  margin-top: 27px;
+}
+
+.card {
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-adress {
+  font-style: normal;
+}
 
   .footer-phone,
   .footer-navigation-link {
@@ -746,17 +796,38 @@
     text-decoration: none;
   }
 
-  .footer-copyright {
+  .basic-grayblue{
+    background-color: var(--basic-grayblue);
+    width: 100%;
+  }
 
+  .footer-copyright {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 107px;
     font-size: 16px;
     line-height: 18px;
     background-color: var(--basic-grayblue);
+  }
+
+  .contacts-item {
+    text-align: left;
+    margin-bottom: 0;
   }
 
   .social-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
+  }
+
+  .social-item {
+    width: 44px;
+    height: 44px;
+    background-color: var(--basic-grayblue);
   }
 
   .academy-site,
@@ -788,6 +859,17 @@
     background-color: var(--basic-background);
   }
 
+  .perforator-list {
+    width: 700px;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
   .catalog-pages {
     list-style: none;
   }
@@ -802,9 +884,9 @@
   }
 
   /* Pop-up */
-  .pop-up-button {
-    color: var(--black);
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+ .pop-up-button {
+  color: var(--black);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
