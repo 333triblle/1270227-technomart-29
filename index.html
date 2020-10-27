@@ -10,18 +10,20 @@
 
   <body class="page-body">
     <header class="basic-bg">
-        <div class="main-header container">
-          <nav class="header-navigation">
-            <a class="main-header-logo" href=""></a>
-            <form>
-              <input class="header-navigation-search" type="search" name="Поиск">
-            </form>
-            <ul class="header-navigation-list">
-              <li><a class="header-navigation-link" href="">Закладки</a></li>
-              <li><a class="header-navigation-link" href="">Корзина</a></li>
-              <li><a class="arrange-order" href="">Оформить заказ</a></li>
-            </ul>
-          </nav>
+      <div class="header-navigation-backgroung">
+        <nav class="header-navigation main-header">
+          <a class="main-header-logo" href=""></a>
+          <form>
+            <input class="header-navigation-search" type="search" name="Поиск">
+          </form>
+          <ul class="header-navigation-list">
+            <li><a class="header-navigation-link" href="">Закладки</a></li>
+            <li><a class="header-navigation-link" href="">Корзина</a></li>
+            <li><a class="arrange-order" href="">Оформить заказ</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div class="main-header">
           <div class="header-wrapper">
             <p class="header-description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
             <div class="header-contacts">
@@ -47,7 +49,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container1">
       <div class="categories-slider">
         <ul class="categories">
           <li class="categories-item materials"><p class="categories-item-paragraph">Материалы</p><a class="categories-link" href="">На любой вкус</a></li>
@@ -108,14 +110,14 @@
         <a class="menu-button" href="">Все производители</a>
       </section>
       <ul class="popular-manufacturers-list">
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/Bosch.png" width="126" height="37" alt="логотип компании bosch"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/Makita.png" width="123" height="40" alt="логотип компании makita"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/DeWALT.png" width="146" height="44" alt="логотип компании dewalt"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/Интерскол.png" width="200" height="76" alt="логотип компании интерскол"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/Hitachi.png" width="169" height="31" alt="логотип компании hitachi"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/LG.png" width="121" height="73" alt="логотип компании lg"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/AEG.png" width="151" height="98" alt="логотип компании aeg"></a></div></li>
-        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a href=""><img src="img/manufacturers/Metabo.png" width="200" height="73" alt="логотип компании metabo"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/Bosch.png" width="126" height="37" alt="логотип компании bosch"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/Makita.png" width="123" height="40" alt="логотип компании makita"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/DeWALT.png" width="146" height="44" alt="логотип компании dewalt"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/Интерскол.png" width="200" height="76" alt="логотип компании интерскол"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/Hitachi.png" width="169" height="31" alt="логотип компании hitachi"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/LG.png" width="121" height="73" alt="логотип компании lg"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/AEG.png" width="151" height="98" alt="логотип компании aeg"></a></div></li>
+        <li class="popular-manufacturers-item"><div class="manufacturers-container"><a class="manufacturers-link" href=""><img src="img/manufacturers/Metabo.png" width="200" height="73" alt="логотип компании metabo"></a></div></li>
       </ul>
       <div class="basic-bg">
         <div class="service-box">
@@ -125,11 +127,13 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </section>
           <div class="service-menu">
-            <ul class="service-list">
-              <li class="service-list-item"><a class="service-list-link" href="">Доставка</a></li>
-              <li class="service-list-item"><a class="service-list-link" href="">Гарантия</a></li>
-              <li class="service-list-item"><a class="service-list-link" href="">Кредит</a></li>
-            </ul>
+            <div class="service-list-container">
+              <ul class="service-list">
+                <li class="service-list-item"><a class="service-list-link" href="">Доставка</a></li>
+                <li class="service-list-item"><a class="service-list-link" href="">Гарантия</a></li>
+                <li class="service-list-item"><a class="service-list-link" href="">Кредит</a></li>
+              </ul>
+            </div>
             <section class="features-item">
               <h2 class="special-heading">Доставка</h2>
               <p class="basic-paragraph" >Мы с удовольствием доставим ваш товар прямо<br>
