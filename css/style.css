@@ -1742,6 +1742,20 @@ input:checked+.manufacturers-check::before{
 }
 
 
+
+/* pop-up-map */
+
+.pop-up-map {
+  position: absolute;
+  z-index: 18;
+  top: 14px;
+  width: 943px;
+  height: 449px;
+
+  background-image: url(../img/pop-up-map.jpg);
+  background-repeat: no-repeat;
+}
+
 /* write-us */
 
 
