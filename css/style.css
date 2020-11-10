@@ -120,7 +120,7 @@ img {
 }
 
 .main-header-logo {
-  display: inline-block;
+  display: block;
   width: 220px;
   height: 42px;
   box-shadow: 0 5px 0 0 var(--error);
@@ -1464,7 +1464,7 @@ width: 100%;
 }
 
 .main-footer-logo {
-  display: inline-block;
+  display: block;
   width: 220px;
   height: 58px;
   box-shadow: 0 4px 0 0 var(--error);
@@ -1652,6 +1652,7 @@ font-style: normal;
 
 .homepage {
   display: inline-block;
+  vertical-align: top;
   width: 14px;
   height: 12px;
 }
