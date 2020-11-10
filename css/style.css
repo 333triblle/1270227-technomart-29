@@ -693,6 +693,7 @@ opacity: 1;
   background-image: url(../img/categories/icon-1.svg);
   background-repeat: no-repeat;
   background-position: 213px 31px;
+  position: relative;
 }
 
 .tool {
@@ -1036,6 +1037,7 @@ opacity: 1;
   width: 218px;
   height: 318px;
   border: 1px solid var(--special-lightgray);
+  position: relative;
 }
 
 
@@ -1046,8 +1048,6 @@ opacity: 1;
 
 .popular-goods-item:hover .modal-price{
 display: flex;
-margin-bottom: 151px;
-margin-right: 3px;
 background-color: var(--white);
 }
 
@@ -1063,10 +1063,14 @@ background-color: var(--white);
   background-image: none;
 }
 
-.new {
-  background-image: url(../img/catalog/new.svg);
+.new::before {
+  content: url(../img/catalog/new.svg );
+  background-position: 100% 0;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  position: absolute;
 }
 
 .to-buy {
@@ -1150,7 +1154,6 @@ background-color: var(--white);
 .BFG-900 {
   width: 184px;
   height: 164px;
-  background-image: url(../img/catalog/BFG-900.jpg);
   margin-bottom: 14px;
   margin-top: 5px;
   background-color: var(--white);
@@ -1159,7 +1162,6 @@ background-color: var(--white);
 .BFG-600 {
   width: 144px;
   height: 113px;
-  background-image: url(../img/catalog/BFG-600.jpg);
   margin-bottom: 35px;
   margin-top: 35px;
   margin-right: 10px;
@@ -1169,7 +1171,6 @@ background-color: var(--white);
 .BFG-300 {
   width: 127px;
   height: 112px;
-  background-image: url(../img/catalog/BFG-300.png);
   margin-bottom: 47px;
   margin-top: 27px;
   margin-right: 13px;
@@ -2385,22 +2386,25 @@ input:checked+.manufacturers-check::before{
 /* modal-price */
 
 .modal-price {
-  width: 160px;
+  width: 100%;
   height: 92px;
 
-  /* display: flex; */
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--white);
 
-  display: none;
   position: absolute;
+  top: 39px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .button-container {
   width: 135px;
-  height: 92px;
+  height: 100px;
+  padding-top: 8px;
   background-color: var(--white);
 }
 
